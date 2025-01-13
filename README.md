@@ -5,7 +5,7 @@ This fixes the roblox app crashing inside Waydroid when using libndk_translation
 ## How to install
 - Build yourself or download a precompiled binary (click [here](https://nightly.link/Slappy826/libndk-fixer/workflows/build/master/lib.zip) to download the latest) from ci.
 - Ensure you have libndk installed, if not you can install it using [waydroid_script](https://github.com/casualsnek/waydroid_script)
-- Edit `/var/lib/waydroid/waydroid_base.prop`
+- Edit `/var/lib/waydroid/waydroid_base.prop`e
   - Find the line that says `ro.dalvik.vm.native.bridge=libndk_translation.so` and replace the `translation` with `fixer`
 - Copy the `libndk_fixer.so` file to this directory `/var/lib/waydroid/overlay/system/lib64/`
 - Finished! The app should start normally now.
